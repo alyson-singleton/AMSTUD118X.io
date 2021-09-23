@@ -17,6 +17,10 @@ head(health_full)
 colnames(health_full)
 nrow(health_full)
 unique(health_full$StateAbbr)
+
+health_ca <- health_full %>%
+  filter(StateAbbr == "CA")
+head(health_ca)
 ```
 
 ## R Markdown
